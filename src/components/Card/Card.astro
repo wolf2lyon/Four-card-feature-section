@@ -1,0 +1,11 @@
+---
+const {item_title,item_description,item_src,item_img_name}  = Astro.props;
+---
+<li class="list__item item">
+    <div class="item__container">
+        <div class="item__border"></div>
+        <div class="item__title">{item_title}</div>
+        <p class="item__description">{item_description}</p>
+        <img src=`${item_src}` alt=`${item_img_name}`/>
+    </div>
+</li>

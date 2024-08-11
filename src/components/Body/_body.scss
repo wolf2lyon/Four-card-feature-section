@@ -1,0 +1,30 @@
+.page__body{
+    margin-top: 2.5rem;
+    
+    .list{
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 19.375rem;
+        grid-auto-rows: 13.4375rem ;
+        gap: 1.5625rem;
+    }
+    
+}
+
+@media (min-width: 900px){
+    .page__body{
+        .list{
+            grid-template-columns: repeat(3,17.375rem);
+            grid-template-rows: repeat(2,13.4375rem);
+        }
+    }
+}
+
+@media (min-width: 1000px){
+    .page__body{
+        .list{
+            grid-template-columns: repeat(3,18.375rem);
+        }
+    }
+}
+

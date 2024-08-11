@@ -1,0 +1,26 @@
+@use '../../sass/variables' as v;
+.page__header{
+    width: 19.375rem;
+    height: 14.375rem;
+    padding: 3.625rem 0 0 0;
+    text-align: center;
+    .page__title{
+       color: v.$very-dark-blue;
+       font-weight: v.$font-small;
+       font-size: v.$font-size--large;
+    }
+    .page__title--strong{
+        font-weight: v.$font-large;
+        color: v.$very-dark-blue;
+    }
+    .page__description{
+        margin-top: 1.25rem;
+        font-weight: v.$font-medium;
+    }
+}
+
+@media (min-width: 900px){
+    .page__header{
+        width: 33.375rem;
+    }
+}

@@ -1,0 +1,12 @@
+---
+const {titleNormal,titleStrong,description} = Astro.props;
+---
+<header class="page__header">
+    <h1 class="page__title">
+        {titleNormal}
+        <br>
+        <strong class="page__title page__title--strong">{titleStrong}</strong>
+    </h1>
+    <p class="page__description">{description}</p>
+</header>
+
